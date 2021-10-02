@@ -324,6 +324,10 @@ section{
         padding-top: 18vh;
         transition:padding-top .3s ease;
     }
+    .nav__items a{
+        font-size: 0.7em;
+
+    }
     
 }
 
@@ -351,13 +355,10 @@ section{
     
     }
 }
+@media screen and (max-width: 337px) {
+    .nav__items a{
+        font-size: 0.6em;
 
-  .showme{ 
-    display: none;
-  }
-  .showhim:hover .showme{
-    display : block;
-  }
-  .showhim:hover .ok{
-    display : none;
-  }
+    }
+}
+
