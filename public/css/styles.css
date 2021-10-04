@@ -71,22 +71,16 @@ body {
 
 }
 section{
-
+    background-color: #f8f2ea;
     padding: 10vh;
-   
-    min-height: 450px;
-
+    min-height: 850px;
 }
 
-
-section{
-
-    background-color: #f8eddf;
-
-}
-#home{
+#home,#port{
     background-color: #3b3b3b;
-  
+}
+#tech{
+    background-color: #3b3b3b;
 }
 
 #home__title{
