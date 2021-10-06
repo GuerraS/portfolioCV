@@ -105,12 +105,7 @@ section{
     transition-duration: 0.2s;
 
 }
-#about__title{
-    font-weight: 400;
-    font-size: 1.5rem;
-    letter-spacing:6px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+
 #home__title{
     margin-left:5%;
     text-align: center;
@@ -148,6 +143,12 @@ section{
     margin-left: -114px;
     
 
+}
+#about__title{
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing:6px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
   /* Media query */
 @media screen and (max-width: 926px) {
@@ -247,6 +248,25 @@ section{
     .nav__items:hover i{
         display: none;
        
+    }
+    #about{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        
+        min-height: 450px;
+    }
+    #about__title{
+        font-weight: 400;
+        font-size: 1.0rem;
+        letter-spacing:5px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #container-about{
+
+        padding: 5vh;
+
     }
     
    
