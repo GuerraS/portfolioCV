@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
-
+}
 .nav__cont {
     position: fixed;
     width: 80px;
@@ -20,8 +19,6 @@ width:220px;
 list-style-type: none;
 color:white;
 }
-
-
 .nav__items{
     min-width: 200px;
 }
@@ -72,17 +69,48 @@ body {
 }
 section{
     background-color: #f8f2ea;
-    padding: 10vh;
-    min-height: 850px;
+   
+    min-height: 567px;
 }
-
+#home{
+    padding: 10vh;
+    /* padding-top: 20vh; */
+}
 #home,#port{
     background-color: #3b3b3b;
 }
 #tech{
     background-color: #3b3b3b;
+    
 }
+#about{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    
+    min-height: 450px;
+}
+#container-about{
+    border-radius: 20px;
+    background-color: white;
+    padding: 10vh;
+    transition:all .3s ease;
 
+}
+#container-about:hover{
+
+    box-shadow: 0 10px 20px rgb(74 74 74 / 15%);
+    transform: translateY(-5px);
+    transition-duration: 0.2s;
+
+}
+#about__title{
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing:6px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 #home__title{
     margin-left:5%;
     text-align: center;

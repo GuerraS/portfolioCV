@@ -62,15 +62,32 @@
       </section>
 
       <section id="about">
-        <div class="showhim" style="color:white">
-          HOVER ME
-          <div class="showme">hai</div>
-          <div class="ok">ok</div>
+        <div class="row">
+          <div id="container-about" class='text-center'>
+            <h1>About me</h1>
+            <h2 id="about__title">
+              I consider myself a friendly person,
+                 empathic, purposeful and
+                 self-taught, I like to help and
+                 support other people within
+                 a work team proposing
+                 new procedures and analyzing
+                 things from a different perspective. 
+            </h2>
+            <p id="about__paragraph">
+              
+            </p>
+          </div>
         </div>
+      </section>
+      <section id="tech">
+        <h1>        Seccion para especificar las herramientas y tecnologias que utilizo
+        </h1>
+      </section>
+      <section id="skills">
+        <h1>seccion apra describir mis skills como programador</h1>
 
       </section>
-      <section id="tech"></section>
-      <section id="skills"></section>
       <section id="port"></section>
       <section id="contact"></section>
     </div>
@@ -83,10 +100,10 @@
     var requiredElement = nav__items[0];
     
     
-    $(".nav__items").on("click", function(){
-      $(this).closest(".nav").find(".active").removeClass("active");
-      $(this).addClass("active");
-    });
+    // $(".nav__items").on("click", function(){
+    //   $(this).closest(".nav").find(".active").removeClass("active");
+    //   $(this).addClass("active");
+    // });
 
     const sections = document.querySelectorAll("section");
     window.onscroll = () => {
@@ -94,7 +111,7 @@
       
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
+        if (pageYOffset >= sectionTop - 190) {
         
           current = section.getAttribute("id"); 
          
