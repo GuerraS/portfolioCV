@@ -239,6 +239,8 @@ section{
         left: 0px;
         transition:font-size .3s ease;
     }
+ 
+   
     .nav__items:hover a{
         top: 0;
         display: inherit;
@@ -293,13 +295,13 @@ section{
         font-weight: 100;
         
     }
-    .nav__items:hover a{
+    .active a{
         top: 0;
         display: inherit;
         color: rgb(110, 255, 255);
         font-weight: 100;
     }
-    .nav__items:hover i{
+    .active i{
         display: none;
        
     }

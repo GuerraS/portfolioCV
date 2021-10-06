@@ -26,7 +26,7 @@
         
       <li class="nav__items zoom tech">
         <i class="fontello icon-code"></i>
-       <a href="#tech">Tech</a>
+       <a href="#tech">Techs</a>
       </li>
         
       <li class="nav__items zoom skills">
@@ -100,7 +100,7 @@
   
   <script type="text/javascript">
     var nav__items = document.querySelectorAll(".nav__items"); 
-    var requiredElement = nav__items[0];
+    // var requiredElement = nav__items[0];
     
     
     // $(".nav__items").on("click", function(){
@@ -114,7 +114,7 @@
       
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 190) {
+        if (pageYOffset >= sectionTop - 300) {
         
           current = section.getAttribute("id"); 
          
@@ -122,7 +122,6 @@
       });
 
       nav__items.forEach((li) => {
-        console.log(li.classList.contains(current));
         li.classList.remove("active");
         if (li.classList.contains(current)) {
           li.classList.add("active");
