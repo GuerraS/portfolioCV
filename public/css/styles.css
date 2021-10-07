@@ -229,12 +229,12 @@ section{
         min-width: 90px;
         /* min-height: 73.5px; */
     }
-    .nav__items i{
+    .active i{
         font-size: 25px;
         left:0px;
         transition:font-size .3s ease;
     }
-    .nav__items a{
+    .active a{
         display: none;
         left: 0px;
         transition:font-size .3s ease;
@@ -406,3 +406,13 @@ section{
     }
 }
 
+/* Animate in init */
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+   
+  .js-scroll.scrolled {
+    opacity: 1;
+  }

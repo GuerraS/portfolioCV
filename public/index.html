@@ -64,7 +64,7 @@
       <section id="about">
         <div class="row">
           <div class="col-sm-12">
-            <div id="container-about" class='text-center'>
+            <div id="container-about js-scroll" class='text-center'>
               <h1>About me</h1>
               <h2 id="about__title">
                 I consider myself a friendly person,
@@ -103,13 +103,15 @@
     // var requiredElement = nav__items[0];
     
     
-    // $(".nav__items").on("click", function(){
-    //   $(this).closest(".nav").find(".active").removeClass("active");
-    //   $(this).addClass("active");
-    // });
+    
 
     const sections = document.querySelectorAll("section");
+    // Navbar section
     window.onscroll = () => {
+      $(".nav__items").on("click", function(){
+     
+
+    });
       var current = "";
       
       sections.forEach((section) => {
@@ -128,8 +130,11 @@
         }
       });
     };
-    
-
+    // ANimation div section
+    const scrollElements = document.querySelectorAll(".js-scroll");
+    scrollElements.forEach(element => {
+      el.style.opacity = 0;
+    });
   </script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
