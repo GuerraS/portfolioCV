@@ -81,8 +81,16 @@ section{
     background-color: #3b3b3b;
 }
 #tech{
-    background-color: #3b3b3b;
+    padding: 15vh;
+    min-height: 450px;
+}
+#about{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
     
+    min-height: 450px;
 }
 #about{
     padding-top: 10vh;
@@ -95,6 +103,11 @@ section{
 #container-about{
     border-radius: 20px;
     background-color: white;
+    padding: 10vh;
+    /* transition:all .3s ease; */
+
+}#container-tech{
+   
     padding: 10vh;
     /* transition:all .3s ease; */
 
