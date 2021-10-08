@@ -73,8 +73,9 @@ section{
     min-height: 567px;
 }
 #home{
-    padding: 10vh;
-    /* padding-top: 20vh; */
+    padding: 15vh;
+   
+    min-height: 667px;
 }
 #home,#port{
     background-color: #3b3b3b;
@@ -95,7 +96,7 @@ section{
     border-radius: 20px;
     background-color: white;
     padding: 10vh;
-    transition:all .3s ease;
+    /* transition:all .3s ease; */
 
 }
 #container-about:hover{
@@ -151,6 +152,24 @@ section{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
   /* Media query */
+  @media screen and (max-width: 1024px) {
+    
+    #about{
+      padding-left: 10vh;
+      padding-right: 10vh;
+    }
+    #container-about{
+        padding: 8vh;
+    }
+      
+    #home {
+        padding: 10vh;
+        padding-top: 15vh;
+        
+    }
+     
+     
+  }
 @media screen and (max-width: 926px) {
 
     #home__title{
@@ -274,6 +293,7 @@ section{
    
    
 }
+
 @media screen and (max-width: 563px) {
     
   
@@ -365,6 +385,7 @@ section{
     }
 
     #home{
+        padding: 10vh;
         padding-top: 18vh;
         transition:padding-top .3s ease;
     }
@@ -374,7 +395,6 @@ section{
     }
     
 }
-
 @media screen and (max-width: 352px) {
     .nav__items{
        
@@ -410,9 +430,32 @@ section{
 
 .js-scroll {
     opacity: 0;
-    transition: opacity 500ms;
+    /* transition: opacity 500ms; */
   }
    
-  .js-scroll.scrolled {
-    opacity: 1;
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1.8s ease-in-out both;
   }
+
+  
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+   
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+   
+

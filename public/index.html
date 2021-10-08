@@ -64,7 +64,7 @@
       <section id="about">
         <div class="row">
           <div class="col-sm-12">
-            <div id="container-about js-scroll" class='text-center'>
+            <div id="container-about" class='text-center  js-scroll fade-in-bottom'>
               <h1>About me</h1>
               <h2 id="about__title">
                 I consider myself a friendly person,
@@ -99,21 +99,35 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   
   <script type="text/javascript">
+    window.scrollTo(0,0);
+
+ 
+  if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)){
+
+   console.log("You're using Mobile Device!!")
+   console.log(navigator.userAgent);
+ }
     var nav__items = document.querySelectorAll(".nav__items"); 
-    // var requiredElement = nav__items[0];
-    
+    var requiredElement = nav__items[0];
+    requiredElement.click;
     
     
 
     const sections = document.querySelectorAll("section");
+    const scrollElements = document.querySelectorAll(".js-scroll");
+    // scrollElements.forEach(scrollElements => {
+    //   scrollElements.style.opacity = 0;
+    // });
     // Navbar section
     window.onscroll = () => {
-      $(".nav__items").on("click", function(){
      
-
-    });
       var current = "";
-      
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         if (pageYOffset >= sectionTop - 300) {
@@ -129,12 +143,21 @@
           li.classList.add("active");
         }
       });
+     
+      scrollElements.forEach((scrollElements) => {
+        const sectionTop = scrollElements.offsetTop;
+        if (pageYOffset >= sectionTop - 80) {
+        
+          scrollElements.classList.add("scrolled");
+         
+        }
+      })
+
+     
     };
     // ANimation div section
-    const scrollElements = document.querySelectorAll(".js-scroll");
-    scrollElements.forEach(element => {
-      el.style.opacity = 0;
-    });
+    
+    
   </script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
