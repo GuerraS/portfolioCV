@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    background-color: #212121;
+}
 .nav__cont {
     position: fixed;
     width: 80px;
@@ -57,9 +60,7 @@ color:white;
     /* #5ff3f3 */
 }
 
-body {
-    background-color: #212121;
-}
+
 
 .container-fluid{
 
@@ -68,23 +69,19 @@ body {
 
 }
 section{
-    background-color: #f8f2ea;
+    background-color: #3b3b3b;
    
     min-height: 567px;
 }
 #home{
-    padding: 15vh;
-   
+    padding: 20vh;
     min-height: 667px;
 }
-#home,#port{
-    background-color: #3b3b3b;
+#home .row div{
+    margin: auto;
 }
+
 #tech{
-    padding: 15vh;
-    min-height: 450px;
-}
-#about{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 20vh;
@@ -93,6 +90,7 @@ section{
     min-height: 450px;
 }
 #about{
+    background-color: #f8f2ea;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 20vh;
@@ -100,18 +98,20 @@ section{
     
     min-height: 450px;
 }
+
 #container-about{
     border-radius: 20px;
-    background-color: white;
-    padding: 10vh;
-    /* transition:all .3s ease; */
-
-}#container-tech{
-   
+    /* background-color: white; */
     padding: 10vh;
     /* transition:all .3s ease; */
 
 }
+ #container-tech{
+   
+    padding: 10vh; 
+   
+
+} 
 #container-about:hover{
 
     box-shadow: 0 10px 20px rgb(74 74 74 / 15%);
@@ -120,22 +120,41 @@ section{
 
 }
 
-#home__title{
-    margin-left:5%;
-    text-align: center;
-  
-    font-weight: 100;
-    font-size: 4rem;
+#home__title_1{
     
-    color:white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
+    letter-spacing:6px;
+    text-shadow:10px 10px 10px rgba(0,0,0,.3);
+    font-family:sans-serif;
+    color: #fdebd3;
+    /* transition:font-size .3s ease; */
+}
+#home__title_2{
+  
+    text-align: center;
+    font-size: 3.5rem;
+    
+    color:#41ffff;
     letter-spacing:6px;
     text-shadow:10px 10px 10px rgba(0,0,0,.3);
     
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:sans-serif;
     /* font-weight: bolder; */
-    color: #f8eddf;
+    
     font-weight:400;
     /* transition:font-size .3s ease; */
+}
+#home__title_3{
+    text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
+    letter-spacing:6px;
+    text-shadow:10px 10px 10px rgba(0,0,0,.3);
+    font-family:sans-serif;
+    color: #fdebd3;
+    
 }
 #home__profile{
    width: 100%;
@@ -162,8 +181,25 @@ section{
     font-weight: 400;
     font-size: 1.5rem;
     letter-spacing:6px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Comic Sans MS, Comic Sans, cursive;
 }
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-item{
+   text-align: center;
+ }
+.carousel-item .col-xs-3{
+   display: inline-block;
+}
+.carousel-item .col-sm-3{
+    display: inline-block;
+ }
+ .carousel-item .col-md-3{
+    display: inline-block;
+ }
   /* Media query */
   @media screen and (max-width: 1024px) {
     
@@ -185,9 +221,21 @@ section{
   }
 @media screen and (max-width: 926px) {
 
-    #home__title{
+    #home__title_1{
 
-        font-size: 3.3rem;
+        font-size: 2.5rem;
+        transition:font-size .3s ease;
+
+    }
+    #home__title_2{
+
+        font-size: 3rem;
+        transition:font-size .3s ease;
+
+    }
+    #home__title_3{
+
+        font-size: 2.5rem;
         transition:font-size .3s ease;
 
     }
@@ -195,10 +243,24 @@ section{
 }
 @media screen and (max-width: 850px) {
 
-    #home__title{
+    #home__title_1{
+
+        font-size: 2rem;
+        transition:font-size .3s ease;
+
+    }
+    #home__title_2{
+
         font-size: 2.5rem;
         transition:font-size .3s ease;
-    }   
+
+    }
+    #home__title_3{
+
+        font-size: 2rem;
+        transition:font-size .3s ease;
+
+    }  
     .nav__cont{
 
         width: 60px;
@@ -261,12 +323,13 @@ section{
         min-width: 90px;
         /* min-height: 73.5px; */
     }
-    .active i{
+    
+    .nav__items i{
         font-size: 25px;
         left:0px;
         transition:font-size .3s ease;
     }
-    .active a{
+    .nav__items a{
         display: none;
         left: 0px;
         transition:font-size .3s ease;
@@ -392,10 +455,24 @@ section{
 }
 @media screen and (max-width: 414px) {
 
-    #home__title{
-        font-size: 2.0rem;
+    #home__title_1{
+
+        font-size: 1.5rem;
         transition:font-size .3s ease;
+
     }
+    #home__title_2{
+
+        font-size: 2rem;
+        transition:font-size .3s ease;
+
+    }
+    #home__title_3{
+
+        font-size: 1.5rem;
+        transition:font-size .3s ease;
+
+    }  
 
     #home{
         padding: 10vh;
@@ -453,7 +530,7 @@ section{
   
 @keyframes fade-in-bottom {
     0% {
-      transform: translateY(100px);
+      transform: translateY(80px);
       opacity: 0;
     }
     100% {
