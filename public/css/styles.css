@@ -86,14 +86,16 @@ section{
     
     min-height: 450px;
 }
-
+.carousel-control-prev-icon{
+    color: gray;
+}
 #tech{
-    padding-top: 10vh;
+    /* padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 10vh;
-    padding-right: 10vh;
-    
-    min-height: 450px;
+    padding-right: 10vh; */
+    background-color: #f8f2ea;
+    /* min-height: 350px; */
 }
 
 
@@ -175,7 +177,7 @@ section{
     
 
 }
-#about__title,#tech_title{
+#about__description{
     font-weight: 400;
     font-size: 1.5rem;
     letter-spacing:6px;
@@ -197,6 +199,14 @@ section{
  }
  .carousel-item .col-md-3{
     display: inline-block;
+ }
+ .carousel-item img{
+    transition: transform .3s;
+    max-width: 130px;
+ }
+ .carousel-item img:hover{
+    transform: rotate(10deg);
+    transition: transform .3s;
  }
   /* Media query */
 @media screen and (max-width: 992px){
@@ -354,10 +364,10 @@ section{
         
         min-height: 450px;
     }*/
-    #about__title,#tech_title{
+    #about__description{
         font-weight: 400;
-    font-size: 1.3rem;
-    letter-spacing:6px;
+        font-size: 1.3rem;
+        letter-spacing:6px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     } 
     /* #container-about{
