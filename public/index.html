@@ -49,13 +49,13 @@
   <div class="wraper">
     <section id="home" class="p-3 d-flex  justify-content-center">
       <div class="row justify-content-between align-self-center">
-        <div class="col-md-6 col-12  py-1">
+        <div class="col-md-6 col-12  py-3">
           <div id="container-image">
             <img id="home__profile" class="animate__animated animate__fadeIn" srcset="me.png" >
           </div>
           
         </div>
-        <div class="col-md-6 col-12   py-1">
+        <div class="col-md-6 col-12   py-3">
             <h1 id="home__title_1" class="animate__animated animate__fadeIn font-weight-bold">Hi!</h1>
             <h1 id="home__title_2" class="animate__animated animate__fadeIn"><b></b> I'm Oscar,</b></h1>
             <h1 id="home__title_3" class="animate__animated animate__fadeIn font-weight-bold">web developer </h1>
@@ -83,10 +83,10 @@
         </div>
       </div>
     </section>
-    <section id="tech" class="p-3 d-flex  justify-content-center">
+    <section id="tech" class="p-3 d-flex  justify-content-center ">
       <div class="row d-flex justify-content-between align-self-center w-100">
         <div class="col-12 w-100" >
-          <div class="bd-example js-scroll fade-in-bottom text-center">
+          <div class="bd-example  text-center">
             <h1 id="tech_title"class="my-3">Technologies</h1>
             <br>
             <div id="technologieIndicator" class="carousel slide" data-ride="carousel">
@@ -169,7 +169,7 @@
       var current = "";
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 150) {
+        if (pageYOffset >= sectionTop - 50) {
         
           current = section.getAttribute("id"); 
          
@@ -184,9 +184,9 @@
       });
      
       scrollElements.forEach((scrollElements) => {
-        console.log(scrollElements.offsetTop);
+        console.log(scrollElements.offsetTop,scrollElements);
         const sectionTop = scrollElements.offsetTop;
-        if (pageYOffset >= sectionTop - 420) {
+        if (pageYOffset >= sectionTop +100) {
         
           scrollElements.classList.add("scrolled");
          
