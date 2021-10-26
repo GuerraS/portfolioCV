@@ -47,7 +47,7 @@
   </nav>
   
   <div class="wraper">
-    <section id="home" class="p-3 d-flex  justify-content-center">
+    <section id="home" class="p-3 m-5 d-flex  justify-content-center">
       <div class="row justify-content-between align-self-center">
         <div class="col-md-6 col-12  py-3">
           <div id="container-image">
@@ -55,14 +55,14 @@
           </div>
           
         </div>
-        <div class="col-md-6 col-12   py-3">
-            <h1 id="home__title_1" class="animate__animated animate__fadeIn font-weight-bold">Hi!</h1>
-            <h1 id="home__title_2" class="animate__animated animate__fadeIn"><b></b> I'm Oscar,</b></h1>
-            <h1 id="home__title_3" class="animate__animated animate__fadeIn font-weight-bold">web developer </h1>
+        <div class="col-md-6 col-12 py-3" >
+            <h1 id="home__title_1" class="animate__animated animate__fadeIn font-weight-bold">Hi.</h1>
+            <h1 id="home__title_2" class="animate__animated animate__fadeIn"> I'm Oscar.</h1>
+            <h1 id="home__title_3" class="animate__animated animate__fadeIn font-weight-bold">Fullstack developer. </h1>
         </div>
       </div>  
     </section>
-    <section id="about" class="p-3 d-flex  justify-content-center">
+    <section id="about" class="p-3  m-5 d-flex  justify-content-center">
       <div class="row justify-content-center align-self-center">
         <div class="col-12">
           <div id="container-about" class='text-center js-scroll fade-in-bottom p-3 p-md-5'>
@@ -83,7 +83,7 @@
         </div>
       </div>
     </section>
-    <section id="tech" class="p-3 d-flex  justify-content-center ">
+    <section id="tech" class="p-3  m-5 d-flex  justify-content-center js-scroll fade-in-bottom ">
       <div class="row d-flex justify-content-between align-self-center w-100">
         <div class="col-12 w-100" >
           <div class="bd-example  text-center">
@@ -98,7 +98,6 @@
               <div class="carousel-inner  p-2" >
                 <div class="carousel-item active">
                   <div class="row justify-content-around align-items-center">
-
                     <div class="icon-techs"> <img class="d-block w-100" src="images/js.svg"></div>
                     <div class="icon-techs"> <img class="d-block w-100" src="images/php.svg"></div>
                     <div class="icon-techs"> <img class="d-block w-100" src="images/bootstrap.svg"></div>
@@ -107,7 +106,6 @@
                 </div>
                 <div class="carousel-item">
                   <div class="row justify-content-around align-items-center">
-
                     <div class="icon-techs"> <img class="d-block w-100" src="images/css3.svg"></div>
                     <div class="icon-techs"> <img class="d-block w-100" src="images/github.svg"></div>
                     <div class="icon-techs"> <img class="d-block w-100" src="images/html5.svg"></div>
@@ -130,7 +128,6 @@
       </div>
     </section>
     <section id="skills">
-      <!-- <h1>seccion apra describir mis skills como programador</h1> -->
     </section>
     <section id="port"></section>
     <section id="contact"></section>
@@ -165,7 +162,6 @@
     // });
     // Navbar section
     window.onscroll = () => {
-     
       var current = "";
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
@@ -175,25 +171,20 @@
          
         }
       });
-
       nav__items.forEach((li) => {
         li.classList.remove("active");
         if (li.classList.contains(current)) {
           li.classList.add("active");
         }
       });
-     
       scrollElements.forEach((scrollElements) => {
-        console.log(scrollElements.offsetTop,scrollElements);
         const sectionTop = scrollElements.offsetTop;
-        if (pageYOffset >= sectionTop +100) {
-        
+        // console.log(scrollElements);
+        if (pageYOffset >= sectionTop - 50) {
+          console.log(scrollElements.offsetTop,scrollElements.getAttribute("id"));
           scrollElements.classList.add("scrolled");
-         
         }
       })
-
-     
     };
     // ANimation div section
     
