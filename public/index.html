@@ -1,196 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fontello/css/fontello.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <title>Home</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fontello/css/fontello.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<title>Home</title>
 </head>
+
 <body>
-   
-  <nav class="nav__cont fixed-top">
-    <ul class="nav">
-      <li class="nav__items zoom home">
-        <i class="fontello icon-home"></i>
-        <a href="#home">Home</a>
-      </li>
-      
-      <li class="nav__items zoom about">
-        <i class="fontello icon-user"></i>
-        <a href="#about">About me</a>
-      </li>
-        
-      <li class="nav__items zoom tech">
-        <i class="fontello icon-code"></i>
-       <a href="#tech">Techs</a>
-      </li>
-        
-      <li class="nav__items zoom skills">
-        <i class="fontello icon-params"></i>
-        <a href="#skills">Skills</a>
-      </li>
-      <li class="nav__items zoom port">
-        <i class="fontello icon-folder"></i>
-        <a href="#port">Portfolio</a>
-      </li>
-      <li class="nav__items zoom contact">
-        <i class="fontello icon-contacts"></i>
-        <a href="#contact">Contact </a>
-      </li>
-          
-    </ul>
-  </nav>
-  
-  <div class="wraper">
-    <section id="home" class="p-3 m-5 d-flex  justify-content-center">
-      <div class="row justify-content-between align-self-center">
-        <div class="col-md-6 col-12  py-3">
-          <div id="container-image">
-            <img id="home__profile" class="animate__animated animate__fadeIn" srcset="me.png" >
-          </div>
-          
-        </div>
-        <div class="col-md-6 col-12 py-3" >
-            <h1 id="home__title_1" class="animate__animated animate__fadeIn font-weight-bold">Hi.</h1>
-            <h1 id="home__title_2" class="animate__animated animate__fadeIn"> I'm Oscar.</h1>
-            <h1 id="home__title_3" class="animate__animated animate__fadeIn font-weight-bold">Fullstack developer. </h1>
-        </div>
-      </div>  
-    </section>
-    <section id="about" class="p-3  m-5 d-flex  justify-content-center">
-      <div class="row justify-content-center align-self-center">
-        <div class="col-12">
-          <div id="container-about" class='text-center js-scroll fade-in-bottom p-3 p-md-5'>
-            <h1>About me</h1>
-            <h2 id="about__description">
-              <br>
-              I consider myself a friendly person,
-                  empathic, purposeful and
-                  self-taught, I like to help and
-                  support other people within
-                  a work team proposing
-                  new procedures and analyzing
-                  things from a different perspective. 
-            </h2>
-            
 
-        </div>
-        </div>
-      </div>
-    </section>
-    <section id="tech" class="p-3  m-5 d-flex  justify-content-center js-scroll fade-in-bottom ">
-      <div class="row d-flex justify-content-between align-self-center w-100">
-        <div class="col-12 w-100" >
-          <div class="bd-example  text-center">
-            <h1 id="tech_title"class="my-3">Technologies</h1>
-            <br>
-            <div id="technologieIndicator" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#technologieIndicator" data-slide-to="0" class="active"></li>
-                <li data-target="#technologieIndicator" data-slide-to="1" class=""></li>
-               
-              </ol>
-              <div class="carousel-inner  p-2" >
-                <div class="carousel-item active">
-                  <div class="row justify-content-around align-items-center">
-                    <div class="icon-techs"> <img class="d-block w-100" src="images/js.svg"></div>
-                    <div class="icon-techs"> <img class="d-block w-100" src="images/php.svg"></div>
-                    <div class="icon-techs"> <img class="d-block w-100" src="images/bootstrap.svg"></div>
-                    <div class="icon-techs"> <img class="d-block w-100" src="images/postman.svg"></div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-around align-items-center">
-                    <div class="icon-techs"> <img class="d-block w-100" src="images/css3.svg"></div>
-                    <div class="icon-techs"> <img class="d-block w-100" src="images/github.svg"></div>
-                    <div class="icon-techs"> <img class="d-block w-100" src="images/html5.svg"></div>
-                    <div class="icon-techs"> <img class="d-block w-100" src="images/node.svg"></div>
-                  </div>
-                </div>
-              
-              </div>
-              <a class="carousel-control-prev" href="#technologieIndicator" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#technologieIndicator" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-    </section>
-    <section id="port"></section>
-    <section id="contact"></section>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  
-  <script type="text/javascript">
-    window.scrollTo(0,0);
+	<nav class="nav__cont fixed-top">
+		<ul class="nav">
+			<li class="nav__items zoom home">
+				<i class="fontello icon-home"></i>
+				<a href="#home">Home</a>
+			</li>
 
- 
-  if( navigator.userAgent.match(/Android/i)
- || navigator.userAgent.match(/webOS/i)
- || navigator.userAgent.match(/iPhone/i)
- || navigator.userAgent.match(/iPad/i)
- || navigator.userAgent.match(/iPod/i)
- || navigator.userAgent.match(/BlackBerry/i)
- || navigator.userAgent.match(/Windows Phone/i)){
+			<li class="nav__items zoom about">
+				<i class="fontello icon-user"></i>
+				<a href="#about">About me</a>
+			</li>
 
-   console.log("You're using Mobile Device!!")
-   console.log(navigator.userAgent);
- }
-    var nav__items = document.querySelectorAll(".nav__items"); 
-    var requiredElement = nav__items[0];
-    requiredElement.click;
-    
-    
+			<li class="nav__items zoom tech">
+				<i class="fontello icon-code"></i>
+				<a href="#tech">Techs</a>
+			</li>
 
-    const sections = document.querySelectorAll("section");
-    const scrollElements = document.querySelectorAll(".js-scroll");
-    // scrollElements.forEach(scrollElements => {
-    //   scrollElements.style.opacity = 0;
-    // });
-    // Navbar section
-    window.onscroll = () => {
-      var current = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 50) {
-        
-          current = section.getAttribute("id"); 
-         
-        }
-      });
-      nav__items.forEach((li) => {
-        li.classList.remove("active");
-        if (li.classList.contains(current)) {
-          li.classList.add("active");
-        }
-      });
-      scrollElements.forEach((scrollElements) => {
-        const sectionTop = scrollElements.offsetTop;
-        // console.log(scrollElements);
-        if (pageYOffset >= sectionTop - 50) {
-          console.log(scrollElements.offsetTop,scrollElements.getAttribute("id"));
-          scrollElements.classList.add("scrolled");
-        }
-      })
-    };
+			<li class="nav__items zoom skills">
+				<i class="fontello icon-params"></i>
+				<a href="#skills">Skills</a>
+			</li>
+			<li class="nav__items zoom port">
+				<i class="fontello icon-folder"></i>
+				<a href="#port">Portfolio</a>
+			</li>
+			<li class="nav__items zoom contact">
+				<i class="fontello icon-contacts"></i>
+				<a href="#contact">Contact </a>
+			</li>
+
+		</ul>
+	</nav>
+
+	<div class="wraper">
+		<section id="home" class="row p-3 m-5 d-flex  justify-content-center flex-wrap">
+		
+				<div class="py-3 col-md-6 d-flex justify-content-center">
+					<img id="home__profile" class="animate__animated animate__bounceInLeft img-fluid" alt="Responsive image"" srcset="mev2.png">
+				</div>
+				<div class=" py-3 col-md-6 d-flex " >
+					<div class="d-flex align-self-center flex-column align-content-center">
+						<h1 id="home__title_1" class="animate__animated animate__bounceInRight font-weight-bold  mb-3">Hi, I'm Oscar, a
+							fullstack developer</h1>
+						<p id="description__me" class="animate__animated animate__bounceInUp">
+							With experience in mobile web applications with a keen to develop high quality content, bringing products to life.
+						</p>
+					</div>
+					
+					<!-- <h1 id="home__title_2" class="animate__animated animate__fadeIn"> </h1>
+				<h1 id="home__title_3" class="animate__animated animate__fadeIn font-weight-bold"></h1> -->
+				</div>
+		
+			
+	</div>
+	</section>
+	<section id="about" class="p-3  m-5 d-flex  justify-content-center">
+		<!-- <div class="row justify-content-center align-self-center">
+        <div class="col-12"> -->
+		<div id="container-about" class='text-center js-scroll fade-in-bottom p-3 p-md-5'>
+			<h1>About me</h1>
+			<p id="about__description">
+				<br>
+				I consider myself a friendly person,
+				empathic, purposeful and
+				self-taught, I like to help and
+				support other people within
+				a work team proposing
+				new procedures and analyzing
+				things from a different perspective. I've Spent the past 3 years of my life working across different projects, facing new challenges alone or side by side with my teammates either, researching, prototyping, fixing and coding.  
+			</p>
+
+
+		</div>
+		<!-- </div> -->
+		<!-- </div> -->
+	</section>
+	<section id="tech" class="p-3  m-5 d-flex  justify-content-center js-scroll fade-in-bottom ">
+		<div class="row d-flex justify-content-between align-self-center w-100">
+			<div class="col-12 w-100">
+				<div class="bd-example  text-center">
+					<h1 id="tech_title" class="my-3">Technologies</h1>
+					<br>
+					<div id="technologieIndicator" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#technologieIndicator" data-slide-to="0" class="active"></li>
+							<li data-target="#technologieIndicator" data-slide-to="1" class=""></li>
+
+						</ol>
+						<div class="carousel-inner  p-2">
+							<div class="carousel-item active">
+								<div class="row justify-content-around align-items-center">
+									<div class="icon-techs"> <img class="d-block w-100" src="images/js.svg"></div>
+									<div class="icon-techs"> <img class="d-block w-100" src="images/php.svg"></div>
+									<div class="icon-techs"> <img class="d-block w-100" src="images/bootstrap.svg">
+									</div>
+									<div class="icon-techs"> <img class="d-block w-100" src="images/postman.svg"></div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row justify-content-around align-items-center">
+									<div class="icon-techs"> <img class="d-block w-100" src="images/css3.svg"></div>
+									<div class="icon-techs"> <img class="d-block w-100" src="images/github.svg"></div>
+									<div class="icon-techs"> <img class="d-block w-100" src="images/html5.svg"></div>
+									<div class="icon-techs"> <img class="d-block w-100" src="images/node.svg"></div>
+								</div>
+							</div>
+
+						</div>
+						<a class="carousel-control-prev" href="#technologieIndicator" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#technologieIndicator" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="skills">
+	</section>
+	<section id="port"></section>
+	<section id="contact"></section>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		window.scrollTo(0, 0);
+
+
+		if (navigator.userAgent.match(/Android/i)
+			|| navigator.userAgent.match(/webOS/i)
+			|| navigator.userAgent.match(/iPhone/i)
+			|| navigator.userAgent.match(/iPad/i)
+			|| navigator.userAgent.match(/iPod/i)
+			|| navigator.userAgent.match(/BlackBerry/i)
+			|| navigator.userAgent.match(/Windows Phone/i)) {
+
+			console.log("You're using Mobile Device!!")
+			console.log(navigator.userAgent);
+		}
+		var nav__items = document.querySelectorAll(".nav__items");
+		var requiredElement = nav__items[0];
+		requiredElement.click;
+
+
+
+		const sections = document.querySelectorAll("section");
+		const scrollElements = document.querySelectorAll(".js-scroll");
+		// scrollElements.forEach(scrollElements => {
+		//   scrollElements.style.opacity = 0;
+		// });
+		// Navbar section
+		window.onscroll = () => {
+			var current = "";
+			sections.forEach((section) => {
+				const sectionTop = section.offsetTop;
+				if (pageYOffset >= sectionTop - 50) {
+
+					current = section.getAttribute("id");
+
+				}
+			});
+			nav__items.forEach((li) => {
+				li.classList.remove("active");
+				if (li.classList.contains(current)) {
+					li.classList.add("active");
+				}
+			});
+			scrollElements.forEach((scrollElements) => {
+				const sectionTop = scrollElements.offsetTop;
+				// console.log(scrollElements);
+				if (pageYOffset >= sectionTop - 50) {
+					console.log(scrollElements.offsetTop, scrollElements.getAttribute("id"));
+					scrollElements.classList.add("scrolled");
+				}
+			})
+		};
     // ANimation div section
-    
-    
-  </script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	</script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
